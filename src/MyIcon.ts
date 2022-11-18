@@ -11,15 +11,11 @@ export class MyIcon extends LitElement {
     }
   `;
 
-  @property({ type: String }) title = "Hey there";
+  @property({ type: String }) library = "fa";
 
-  @property({ type: Number }) counter = 5;
-
-  __increment() {
-    this.counter += 1;
-  }
+  @property({ type: String }) name = "far-comment";
 
   render() {
-    return html`<sl-icon name="1-circle"></sl-icon> `;
+    return html`<sl-icon name=${this.name} library=${this.library}></sl-icon>`;
   }
 }

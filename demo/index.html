@@ -21,7 +21,10 @@
 
       const title = "Hello owc World!";
       render(
-        html`<my-icon .title=${title}> some light-dom </my-icon> `,
+        html`
+          <my-icon></my-icon>
+          <my-icon library="fa" name="far-bell"></my-icon>
+        `,
         document.querySelector("#demo")
       );
     </script>
